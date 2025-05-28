@@ -1,0 +1,33 @@
+.wrapper {
+  padding: 200px 0;
+  background-color: #f2f2f2;
+}
+.content {
+  width: 500px;
+  margin: 180px auto 0;
+  padding: 120px 80px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(102,102,102,0.15);
+  font-size: 18px;
+  font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+  text-align: center;
+  opacity: 0;
+}
+.content.inview {
+  animation-name: fade-in;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .4s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes fade-in {
+  0% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
